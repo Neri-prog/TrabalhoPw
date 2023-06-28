@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Quiz</title>
+    <script src="advimagem.js"></script>
+</head>
+<body style="margin-top: 60px">
+    <!-- usando o container fluid -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="nav1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="exemplos_para_jogos/quizz/quizzok10.html" class="nav-link">Quiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="advinha_numero.html" class="nav-link">Número</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="linkDrop" data-toggle="dropdown">
+                                    Jogos
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="quizimagem.html" class="dropdown-item">Imagem</a>
+                                    <a href="exemplos_para_jogos/Jogo de adivinhação/Sorteio_números.html" class="dropdown-item">Adivinhação de número</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 align="center">Jogo de Adivinhação</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                            <h3 class="alert-heading">Mensagem ao usuário:</h3>
+                            <hr>
+                            <h4> Veja a carta a seguir, memorize uma imagem, e espere
+                                que vou adivinhar.</h4>
+                            <h4>
+                                Só errarei se você não identificar corretamente as cartas em que está a imagem que você
+                                pensou !!!</h4>
+
+                            <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form name="formAdivinha" method="get">
+                            <center><img src="imagens_jogo/principal.png" border="5" width="740"
+                                    title="Role a tela para baixo">
+                    </div>
+                    <div class="card-footer">
+                        <h3 align="center"> Role para baixo </h3>
+                        <marquee behavior="alternate">
+                            <h2> Escolha abaixo as cartas em que sua imagem aparece.</h2>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 align="center">Carta Um</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagens_jogo/carta1.png" class="rounded mx-auto d-block"> <br /><br />
+                        <h4 align="center"><input type="radio" name="op1" value="Sim">Sim
+                            <input type="radio" name="op1" value="Não" checked>Não<br/>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 align="center">Carta Dois</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagens_jogo/carta2.png" class="rounded mx-auto d-block"> <br /> <br />
+                        <h4 align="center"><input type="radio" name="op2" value="Sim">Sim
+                            <input type="radio" name="op2" value="Não" checked>Não<br />
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 align="center">Carta Três</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagens_jogo/carta3.png" class="rounded mx-auto d-block"> <br /> <br />
+                        <h4 align="center"><input type="radio" name="op3" value="Sim">Sim
+                            <input type="radio" name="op3" value="Não" checked>Não<br />
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 align="center">Carta Quatro</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagens_jogo/carta4.png" class="rounded mx-auto d-block"> <br /> <br />
+                        <h4 align="center"><input type="radio" name="op4" value="Sim">Sim
+                            <input type="radio" name="op4" value="Não" checked>Não
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>
+                            <h4 align="center"><input type="button" name="verifica" value="Ver o Resultado" onclick="respostas()"
+                                    class="btn btn-primary"> &nbsp;&nbsp;&nbsp;
+                                <input type="reset" name="limpar" value="Limpar Respostas" class="btn btn-primary">
+                            </h4>
+                            </form>
+
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
